@@ -18,9 +18,9 @@ import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.config.annotation.EnableWebMvc;
 import org.springframework.web.servlet.support.ServletUriComponentsBuilder;
 
-import com.bezkoder.spring.files.upload.db.message.ResponseFile;
-import com.bezkoder.spring.files.upload.db.message.ResponseMessage;
 import com.luv2code.springboot.thymeleafdemo.entity.FileDB;
+import com.luv2code.springboot.thymeleafdemo.message.ResponseFile;
+import com.luv2code.springboot.thymeleafdemo.message.ResponseMessage;
 import com.luv2code.springboot.thymeleafdemo.service.FileStorageService;
 
 @CrossOrigin(origins = "*")

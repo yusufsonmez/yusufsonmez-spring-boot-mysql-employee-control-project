@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.multipart.MaxUploadSizeExceededException;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
-import com.bezkoder.spring.files.upload.db.message.ResponseMessage;
+import com.luv2code.springboot.thymeleafdemo.message.ResponseMessage;
 
 @ControllerAdvice
 public class EmployeeRestExceptionHandler {

@@ -1,4 +1,4 @@
-package com.bezkoder.spring.files.upload.db.message;
+package com.luv2code.springboot.thymeleafdemo.message;
 
 public class ResponseMessage {
   private String message;
