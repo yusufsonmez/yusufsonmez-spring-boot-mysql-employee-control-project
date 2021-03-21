@@ -93,12 +93,13 @@
 			</tr>
 		</tbody>		
 	</table>
-	
+		
+		<div>
 			<!-- FOR UPLOAD -->
 			<div sec:authorize="hasRole('ROLE_ADMIN')">  
 				<form method="POST" enctype="multipart/form-data" action="/upload">
 					<table>
-						<tr><td>File to upload:</td><td><input type="file" name="file" /></td></tr>
+						<tr><td>Upload et:</td><td><input type="file" name="file" /></td></tr>
 						<tr><td></td><td><input type="submit" value="Upload" /></td></tr>
 					</table>
 				</form>
@@ -111,18 +112,14 @@
 					</li>
 				</ul>
 			</div>
+				 <form th:action="@{/files}" class="form-inline">
+					<button class="btn btn-success mb-3" name="files" type="submit">dosyaları getir</button>
+   				 </form>	
+			<p>http://localhost:8080/files/id</p>
 		<!-- FOR UPLOAD -->
+	</div>
 	
 
-	
-	
-	
-<!--   <form th:action="@{/employees/reviews}" class="form-inline">
-
-		<button class="btn btn-success mb-3" name="reviews" type="submit">yorumlari getir</button>
-    </form>	
-     -->	
-     
       <form th:action="@{/employees/reviews}" class="form-inline">
 
 		<button class="btn btn-success mb-3" name="reviews" type="submit">yorumlari getir</button>
